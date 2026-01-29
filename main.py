@@ -19,7 +19,7 @@ app.add_middleware(
 
 class model_input(BaseModel):
     
-    pregnancies : int
+    Pregnancies : int
     Glucose : int
     BloodPressure : int
     SkinThickness : int
@@ -54,4 +54,5 @@ def diabetes_predd(input_parameters : model_input):
     if (prediction[0] == 0):
         return 'The person is not diabetic'
     else:
+
         return 'The person is diabetic'
